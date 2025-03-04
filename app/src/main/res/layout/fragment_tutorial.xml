@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!-- LAYOUT PARA LA GUÍA DE TUTORIAL COMPLETA-->
+
+    <!-- Pantalla 1: Bienvenida -->
+    <LinearLayout
+        android:id="@+id/tutorial_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/custom_welcome_purple"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_intro_title"
+            android:layout_marginBottom="20dp"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_intro"
+            android:textSize="20sp"
+            android:paddingTop="2dp"
+            android:fontFamily="serif"
+            android:textColor="@android:color/white" />
+
+        <!-- Imagen del logo de Spyro -->
+        <ImageView
+            android:id="@+id/spyro_image"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/spyro_logo_welcome"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_message"
+            android:fontFamily="serif"
+            android:textSize="18sp"
+            android:paddingTop="2dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_ready"
+            android:textSize="16sp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            android:paddingHorizontal="70dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="serif"
+            android:shadowColor="#FFD700"
+            android:shadowRadius="3"
+            android:shadowDx="2"
+            android:shadowDy="2"/>
+
+        <!-- Botón de siguiente para avanzar-->
+        <Button
+            android:id="@+id/btnNextWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_next"
+            android:background="@android:color/white"
+            android:fontFamily="serif"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"/>
+
+
+    </LinearLayout>
+
+    <!-- Pantalla 2: Personajes -->
+
+    <LinearLayout
+        android:id="@+id/tutorial_characters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Bocadillo con boton -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/purple_speech_bubble"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_screen_characters"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="serif"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:paddingBottom="12dp"/>
+
+                <!-- Contenedor para el boton -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- Botón de siguiente para avanzar-->
+                    <Button
+                        android:id="@+id/btnNextCharacters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:text="@string/btn_next"
+                        android:fontFamily="serif"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <!-- Pantalla 3: Mundos -->
+
+    <LinearLayout
+        android:id="@+id/tutorial_worlds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Bocadillo con boton -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/purple_speech_bubble"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_screen_worlds"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="serif"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:paddingBottom="12dp"/>
+
+                <!-- Contenedor para el boton -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- Botón de siguiente para avanzar-->
+                    <Button
+                        android:id="@+id/btnNextWorlds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:fontFamily="serif"
+                        android:text="@string/btn_next"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <!-- Pantalla 4: Coleccionables -->
+
+    <LinearLayout
+        android:id="@+id/tutorial_collectibles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Bocadillo con boton -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="80dp"
+                android:background="@drawable/purple_speech_bubble"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_screen_collectibles"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="serif"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:paddingBottom="12dp"/>
+
+                <!-- Contenedor para el boton -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- Botón de siguiente para avanzar-->
+                    <Button
+                        android:id="@+id/btnNextCollectibles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:text="@string/btn_next"
+                        android:fontFamily="serif"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <!-- Pantalla 5: Menu "Sobre..." -->
+
+    <LinearLayout
+        android:id="@+id/tutorial_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Bocadillo con boton -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_margin="100dp"
+                android:background="@drawable/purple_speech_bubble"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_screen_about_menu"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="serif"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:paddingBottom="12dp"/>
+
+                <!-- Contenedor para el boton -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <!-- Botón de siguiente para avanzar-->
+                    <Button
+                        android:id="@+id/btnNextAbout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:text="@string/btn_next"
+                        android:fontFamily="serif"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="8dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- Pantalla 6: Resumen final -->
+    <LinearLayout
+        android:id="@+id/tutorial_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/custom_welcome_purple"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_screen_title"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:fontFamily="serif"
+            android:paddingBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/end_screen_text1"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/end_screen_resume"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="serif"
+            android:textAlignment="center"
+            android:paddingBottom="16dp"/>
+
+        <!-- Imagen de Spyro -->
+        <ImageView
+            android:id="@+id/spyro_end_screen"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:src="@drawable/spyro_end_screen"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/end_screen_text2"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="serif"
+            android:shadowColor="#FFD700"
+            android:shadowRadius="3"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:textAlignment="center"
+            android:paddingBottom="24dp"/>
+
+        <!-- Botón de Finalizar que terminará el tutorial -->
+        <Button
+            android:id="@+id/btnFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_end"
+            android:background="@android:color/white"
+            android:fontFamily="serif"
+            android:textColor="@color/white"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"/>
+
+    </LinearLayout>
+
+
+    <!-- FrameLayout para situar y mover de manera independiente el icono del círculo -->
+    <FrameLayout
+        android:id="@+id/circle_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:elevation="10dp">
+
+        <!-- Icono del círculo -->
+        <ImageView
+            android:id="@+id/circle_highlight"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icon_circle"
+            android:layout_marginTop="866dp"
+            android:layout_marginStart="35dp"/>
+    </FrameLayout>
+
+    <!-- Botón de Omitir guía para terminar el tutorial -->
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:text="@string/btn_skip"
+        android:fontFamily="serif"
+        android:textColor="@android:color/white"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="56dp"
+        android:paddingVertical="8dp"
+        android:layout_marginEnd="16dp"/>
+
+</FrameLayout>

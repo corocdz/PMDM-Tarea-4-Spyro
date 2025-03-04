@@ -4,6 +4,21 @@
     <string name="characters">Personajes</string>
     <string name="collectibles">Coleccionables</string>
     <string name="title_about">Acerca de</string>
-    <string name="text_about">Aplicación desarrollada por \n <b>Lindsay Barrero Martínez.</b></string>
+    <string name="text_about">Aplicación desarrollada por \n <b>Javier Coronilla Castellano.</b></string>
     <string name="accept">Aceptar</string>
+    <string name="welcome_intro">Prepárate para explorar el mundo mágico de Spyro...\n</string>
+    <string name="welcome_intro_title">¡BIENVENIDO!</string>
+    <string name="welcome_message">Pequeña guía en la que realizarás los siguientes pasos:\n\n-Bienvenida (vista actual).\n-Pantalla de personajes.\n-Pantalla de mundos.\n-Pantalla de coleccionables.\n-Menú "About..."\n-Resumen de la guía.\n</string>
+    <string name="welcome_ready">¡Pulsa el botón cuando estés listo!</string>
+    <string name="btn_next">Siguiente</string>
+    <string name="btn_skip">Omitir guia</string>
+    <string name="text_screen_characters">Aquí podrás explorar a todos los personajes del mundo de Spyro.</string>
+    <string name="text_screen_worlds">En esta sección encontrarás distintos mundos de Spyro.</string>
+    <string name="text_screen_collectibles">Aquí tienes un listado de todos los coleccionables disponibles.</string>
+    <string name="text_screen_about_menu">Pulsando sobre este icono podrás acceder a la información acerca del desarrollador de esta app.</string>
+    <string name="end_screen_title">FIN DEL TUTORIAL</string>
+    <string name="end_screen_text1">¡Enhorabuena! Has completado el tutorial de la aplicación con éxito.</string>
+    <string name="end_screen_resume">Has completado los siguientes pasos:\n-Bienvenida\n-Personajes\n-Mundos\n-Coleccionables\n-Menú about</string>
+    <string name="end_screen_text2">¡Ya eres libre de usar la app a tu antojo!</string>
+    <string name="btn_end">Finalizar</string>
 </resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <!--Layout para easter egg de animación. Consiste en una imagen de Spyro junto con una animación que simula el fuego saliendo de la boca de Spyro-->
+    <!-- Imagen de Spyro con la boca abierta -->
+    <ImageView
+        android:id="@+id/spyroImage"
+        android:layout_width="461dp"
+        android:layout_height="655dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/spyro_open_mouth" />
+
+    <!-- Animación de fuego -->
+    <dam.pmdm.spyrothedragon.models.FireView
+        android:id="@+id/fireView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="460dp"
+        android:layout_marginEnd="50dp"
+        android:scaleY="-1"
+        android:rotation="25"/>
+
+</FrameLayout>

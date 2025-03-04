@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bocadillo informativo para la guía -->
+    <item>
+        <shape android:shape="rectangle"> <!-- Su forma base será un rectángulo -->
+            <solid android:color="@color/custom_purple"/>  <!-- Color morado -->
+            <corners android:radius="32dp"/>  <!-- Bordes redondeados para que se parezca a un bocadillo-->
+        </shape>
+    </item>
+
+    <!-- Semicírculo para la curva inferior -->
+    <item android:bottom="-24dp" android:gravity="center_horizontal">
+        <!-- Semicírculo en la parte inferior del rectángulo, alineado al centro -->
+        <shape android:shape="oval"> <!-- Forma ovalada -->
+            <solid android:color="@color/custom_purple"/> <!-- Color morado -->
+            <size android:width="80dp" android:height="40dp"/>  <!-- Tamaño de la curva -->
+        </shape>
+    </item>
+
+</layer-list>

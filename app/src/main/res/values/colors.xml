@@ -7,4 +7,7 @@
     <color name="yellow2">#88ffffff</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+
+    <color name="custom_welcome_purple">#CBAD40C1</color>
+    <color name="custom_purple">#B22DE6</color>
 </resources>
