@@ -27,14 +27,14 @@ Este proyecto fue desarrollado utilizando las siguientes herramientas y tecnolog
 1. **Clonar el repositorio:**
    git clone https://github.com/corocdz/PMDM-Tarea-4-Spyro.git
 2. Abrir Android Studio:
-   \n-Seleccionamos "Open an Existing Project".
-   -Navegamos al directorio clonado y lo abrimos.
+- Seleccionamos "Open an Existing Project".
+- Navegamos al directorio clonado y lo abrimos.
    
 3. Ya estaría listo para usar, pues se ha subido el proyecto con todos los archivos necesarios para su funcionamiento.
 
 4. Ejecutar la aplicación:
-   -Conectar un dispositivo Android o utilizador un dispositivo emulado desde Android Studio.
-   -Darle a "Run" para compilar y ejecutar la aplicación.
+- Conectar un dispositivo Android o utilizador un dispositivo emulado desde Android Studio.
+- Darle a "Run" para compilar y ejecutar la aplicación.
 
 *También es posible descargar el proyecto completo haciendo click en "Code" y luego "Download file ZIP". Una vez descargado el proyecto, lo descomprimiremos y lo abriremos en Android Studio haciendo click en "Open Project".
 Luego seguimos los pasos normales para su ejecución.
